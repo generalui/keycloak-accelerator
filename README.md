@@ -1,6 +1,6 @@
 # Keycloak Accelerator
 
-This is a starter for a Keycloak server. It uses Docker compose with a custom docker file to run the server inside a container. It assumes there is a Postgres server running outside of the container.
+This is a starter for a [Keycloak](https://www.keycloak.org/) server. It uses docker compose with a custom docker file to run the server inside a container. It assumes there is a Postgres server running outside of the container.
 
 To get an instance of Postgres running quickly and easily, use [postgres_docker](https://github.com/generalui/postgres_docker)
 
