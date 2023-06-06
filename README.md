@@ -1,4 +1,4 @@
-# Keycloak Spike
+# Keycloak Accelerator
 
 This is a starter for a Keycloak server. It uses Docker compose with a custom docker file to run the server inside a container. It assumes there is a Postgres server running outside of the container.
 

@@ -7,16 +7,16 @@ services:
     environment:
       - KC_DB=${KC_DB:-postgres}
       - KC_DB_URL_HOST=${KC_DB_URL_HOST:-host.docker.internal}
-      - KC_DB_NAME=${KC_DB_NAME:-keycloak_spike}
+      - KC_DB_NAME=${KC_DB_NAME:-keycloak}
       - KC_DB_PASSWORD=${KC_DB_PASSWORD:-docker}
-      - KC_DB_URL=${KC_DB_URL:-jdbc:postgresql://${KC_DB_URL_HOST:-host.docker.internal}/${KC_DB_NAME:-keycloak_spike}}
+      - KC_DB_URL=${KC_DB_URL:-jdbc:postgresql://${KC_DB_URL_HOST:-host.docker.internal}/${KC_DB_NAME:-keycloak}}
       - KC_DB_USERNAME=${KC_DB_USERNAME:-postgres}
       - KC_HEALTH_ENABLED=${KC_HEALTH_ENABLED:-true}
       - KC_HOSTNAME=${KC_HOSTNAME:-localhost}
       - KC_METRICS_ENABLED=${KC_METRICS_ENABLED:-true}
       - KEYCLOAK_ADMIN_PASSWORD=${KEYCLOAK_ADMIN_PASSWORD:-password}
       - KEYCLOAK_ADMIN=${KEYCLOAK_ADMIN:-admin}
-    container_name: ${CONTAINER_NAME:-keycloak_spike}
+    container_name: ${CONTAINER_NAME:-keycloak_acc}
     command:
       - ${START_CMD:-start-dev}
     build:
@@ -24,7 +24,7 @@ services:
       dockerfile: Dockerfile
       args:
         keycloakVersion: ${KC_VERSION:-21.1.1}
-    image: ${IMAGE_NAME:-${CONTAINER_NAME:-keycloak_spike}}:${IMAGE_TAG:-dev}
+    image: ${IMAGE_NAME:-${CONTAINER_NAME:-keycloak_acc}}:${IMAGE_TAG:-dev}
     ports:
       - ${HOST_PORT:-8180}:${KEYCLOAK_HTTP_PORT:-8080}
     logging:

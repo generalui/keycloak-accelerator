@@ -22,6 +22,6 @@ COPY --from=builder /opt/keycloak/ /opt/keycloak/
 ENV KC_DB=${KC_DB:-postgres}
 ENV KC_HOSTNAME=${KC_HOSTNAME:-localhost}
 ENV KC_DB_PASSWORD=${KC_DB_PASSWORD:-docker}
-ENV KC_DB_URL=${KC_DB_URL:-jdbc:postgresql://${KC_DB_URL_HOST:-host.docker.internal}/${KC_DB_NAME:-keycloak_spike}}
+ENV KC_DB_URL=${KC_DB_URL:-jdbc:postgresql://${KC_DB_URL_HOST:-host.docker.internal}/${KC_DB_NAME:-keycloak}}
 ENV KC_DB_USERNAME=${KC_DB_USERNAME:-postgres}
 ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
