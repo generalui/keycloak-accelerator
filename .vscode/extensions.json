@@ -1,0 +1,13 @@
+{
+	"recommendations": [
+        "bierner.markdown-preview-github-styles",
+        "davidanson.vscode-markdownlint",
+        "donjayamanne.githistory",
+		"eamodio.gitlens",
+        "github.vscode-pull-request-github",
+		"mikestead.dotenv",
+        "ms-azuretools.vscode-docker",
+        "shardulm94.trailing-spaces",
+		"streetsidesoftware.code-spell-checker"
+	]
+}
