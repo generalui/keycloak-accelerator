@@ -14,7 +14,7 @@ services:
       KC_HEALTH_ENABLED: ${KC_HEALTH_ENABLED:-true}
       # Enable metrics support
       KC_METRICS_ENABLED: ${KC_METRICS_ENABLED:-true}
-      KEYCLOAK_ADMIN_PASSWORD: ${KEYCLOAK_ADMIN_PASSWORD:-1GettaGoodPass!!}
+      KEYCLOAK_ADMIN_PASSWORD: ${KEYCLOAK_ADMIN_PASSWORD:-2GettaGoodPass!!}
       KEYCLOAK_ADMIN: ${KEYCLOAK_ADMIN:-SuperAdmin}
     container_name: ${KC_CONTAINER_NAME:-keycloak_acc}
     command:

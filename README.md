@@ -20,3 +20,13 @@ KC_DB_USERNAME=some_username
 ## Startup Realm
 
 A startup realm called "NextAuth POC" is included in the [expert_data](./export_data/NextAuth_Poc-realm.json) folder.
+
+The "NextAuth POC" realm has no user that can authenticate.
+Create a new user in that realm to authenticate.
+
+## Admin Dashboard
+
+The default admin user is:
+
+- username: SuperAdmin
+- password: 2GettaGoodPass!!
