@@ -16,3 +16,7 @@ Any environment variables can be set by creating a `.env` file and adding them t
 KC_DB_PASSWORD=some_password
 KC_DB_USERNAME=some_username
 ```
+
+## Startup Realm
+
+A startup realm called "NextAuth POC" is included in the [expert_data](./export_data/NextAuth_Poc-realm.json) folder.
